@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "宋体",serif;
+            font-size: 32px;
+        }
+        .header{
+            background: #5FC0CD;
+            text-align: center;
+        }
+        .close{
+            color: #FFF;
+            line-height: 88px;
+            float: left;
+            padding-left: 30px;
+        }
+        .register{
+            color: #FFF;
+            line-height: 88px;
+            float: right;
+            padding-right: 30px;
+        }
+        .header h1{
+            color: #FFF;
+            font-size: 36px;
+            line-height: 88px;
+            display: inline;
+            font-weight: normal;
+        }
+        body{
+            background: #eff0f4;
+        }
+        .bodyer div{
+            background: #fff;
+            height: 100px;
+            width: 100%;
+            margin-top: 2vh;
+        }
+        .bodyer div img{
+            height: 43px;
+            width: 29px;
+            margin: 29px 40px;
+            float: left;
+        }
+        .input{
+            height: 43px;
+            padding: 10px 10px 10px 36px;
+            margin:18px 0;
+            border: 0;
+            border-left: solid 2px #eaedee;
+            outline: 0;
+        }
+        .bodyer form>input{
+            background: #5FC0CD;
+            color: #fff;
+            height: 100px;
+            line-height: 100px;
+            width: 100%;
+            margin-top: 6vh;
+            font-size: 36px;
+            border: 0;
+        }
+        .bodyer>p{
+            float: right;
+            margin: 18px 30px;
+            color: #5fc0cd;
+        }
+        .reset{
+            background: url(img/x.png) no-repeat;
+            width: 40px;
+            height: 40px;
+            border: 0;
+            float: right;
+            margin: 30px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <p class="close">关闭</p>
+    <h1>登录</h1>
+    <p class="register">注册</p>
+</div>
+<div class="bodyer">
+    <form>
+        <div id="account">
+            <img src="img/iphone.png" alt="手机">
+            <input type="text" class="input" placeholder="请输入手机号" pattern="[0-9]">
+            <input type="button" class="reset" value="">
+        </div>
+        <div id="password">
+            <img src="img/locked.png" alt="密码">
+            <input type="password" class="input" placeholder="请输入密码">
+            <input type="button" class="reset" value="">
+        </div>
+        <input type="submit" value="登 录">
+    </form>
+    <p>忘记密码？</p>
+</div>
+<div class="loading"></div>
+<div class="warning"></div>
+<script>
+    function oReset(obj){
+        var inp = obj.getElementsByTagName("input")[0];
+        var rst = obj.getElementsByTagName("input")[1];
+        rst.onclick = function () {
+            inp.value = "";
+        }
+        if(inp.value){
+            rst.style.display = "block";
+        }
+        else{
+            rst.style.display = "none";
+        }
+    }
+    window.onload = function () {
+        var acc = document.getElementById("account");
+        var pass = document.getElementById("password");
+        setInterval(function () {
+            oReset(acc);
+            oReset(pass);
+        },30)
+    }
+</script>
+</body>
+</html>
