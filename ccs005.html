@@ -89,27 +89,44 @@
         li{
             border-top: solid 1px #e1e5e7;
             border-bottom: solid 1px #e1e5e7;
-            height: 17%;
+            height: 6.25rem;
             margin-left: 4%;
             list-style: none;
         }
         li div{
             padding: 0 1em;
-            display: inline;
+            display: block;
+            overflow: hidden;
             font-size: 2rem;
+            margin: 1.93rem 0;
         }
         .button{
             text-align: center;
-            margin-top: 6.25rem;
+            position: fixed;
+            bottom: 6.25rem;
+            width: 100%;
         }
-        .button button{
+        .butt1{
             font-size: 2.125rem;
             width: 9em;
             height: 2.47em;
-            margin: 15% 5%;
+            margin: 5%;
             display: inline-block;
+            color: #5fc0cd;
+            background: #fff;
+            border: 2px solid #5fc0cd;
+            -webkit-border-radius:12px;
+            -moz-border-radius:12px;
+            border-radius:12px;
+        }
+        .butt2{
             background: #5fc0cd;
             color: #fff;
+            font-size: 2.125rem;
+            width: 9em;
+            height: 2.47em;
+            margin: 5%;
+            display: inline-block;
             border: 2px solid #5fc0cd;
             -webkit-border-radius:12px;
             -moz-border-radius:12px;
@@ -117,15 +134,23 @@
         }
         .bor{
             border-right: solid 1px #e1e5e7;
-            color: #999;
-            line-height: 6.25rem;
         }
         .ex1{
             color: #e26163;
             font-weight: bold;
         }
-
-
+        .flag{
+            color: #999;
+            display: block;
+            float: left;
+            margin: 1.93rem 0;
+        }
+        .ex2{
+            color: #000;
+        }
+        .test{
+            margin-top:1rem;
+        }
     </style>
 </head>
 <body>
@@ -150,7 +175,7 @@
 </div>
 <ul>
     <li>
-            <div class="bor">
+            <div class="bor ex2 flag">
                 <img src="img/star.png" alt="星">    住家
             </div>
             <div>
@@ -158,25 +183,25 @@
             </div>
     </li>
     <li>
-        <div class="bor">从业年限</div>
+        <div class="bor flag">从业年限</div>
         <div>0～3年</div>
     </li>
     <li>
-        <div class="bor">工作时间</div>
+        <div class="bor flag">工作时间</div>
         <div>全天</div>
     </li>
     <li>
-        <div class="bor">服务价格</div>
+        <div class="bor flag">服务价格</div>
         <div class="ex1">25元/小时</div>
     </li>
     <li>
-        <div class="bor">自我介绍</div>
+        <div class="bor flag">自我介绍</div>
         <div class="test">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</div>
     </li>
 </ul>
 <div class="button">
-        <button>留言</button>
-        <button>电话联系</button>
+        <button class="butt1">留言</button>
+        <button class="butt2">电话联系</button>
     </div>
 </body>
 </html>
