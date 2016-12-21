@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>桌游精灵-首页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .navbar{
+            background: #29bde0;
+        }
+        .game,.last-game{
+            margin:auto 5.5%;
+            text-align: center;
+            border: #d0d0d0 solid 1px;
+            position: relative;
+        }
+        .last-game{
+            color: #9a9a9a;
+            font-size: 3.484rem;
+            height: 3em;
+            line-height: 3em;
+            margin-top: 2.38em;
+            margin-bottom: 0.76em;
+        }
+        .last-game span{
+            position: absolute;
+            right: 1.4rem;
+            top: 0.9em;
+        }
+        .game span{
+            position: absolute;
+            color: #fbb435;
+            right: 1.2em;
+            top: 50%;
+        }
+        .game div:not(.title){
+            background: #69d1e9;
+            color: #fff;
+            font-size: 3.208rem;
+            margin: 3.7% 9.5%;
+            height: 4.47em;
+            line-height: 4.47em;
+        }
+        .game p{
+            font-size: 2.453rem;
+            color: #787878;
+        }
+        .title{
+            font-size: 3.774rem;
+            color: #fbb435;
+            border-bottom: #fbb435 solid 2px;
+            height: 1.72em;
+            line-height: 1.72em;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-text">
+        <img src="img/3line.png" alt="←">
+    </div>
+</div>
+<div class="last-game">
+    <p>上次游戏： 捉鬼猜词版
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </p>
+</div>
+<div class="game">
+    <div class="title">捉鬼游戏</div>
+    <div>简化版</div>
+    <p>有2333个用户正在玩此款游戏</p>
+    <div>猜词版
+        <span class="glyphicon glyphicon-play"></span>
+    </div>
+    <p>有666个用户正在玩此款游戏</p>
+    <div>白痴版</div>
+    <p>有7788个用户正在玩此款游戏</p>
+</div>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
