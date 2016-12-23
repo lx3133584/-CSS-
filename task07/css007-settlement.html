@@ -3,8 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <title>桌游精灵-结算</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        @media(min-width:360px){
+            html{font-size:30%;}
+        }
+        @media(min-width:640px){
+            html{font-size:50%;}
+        }
+        @media(min-width:768px){
+            html{font-size:62.5%;}
+        }
+        @media(min-width:1024px){
+            html{font-size:100%;}
+        }
+        body{
+            background: #29bde0;
+            font-size: 1em;
+            margin-top: 6.5em;
+        }
+        .navbar-fixed-top{
+            background: #29bde0;
+        }
+        .navbar-fixed-top h1{
+            color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+            width: 4em;
+            font-size: 3.4rem;
+        }
+        .navbar-fixed-top .navbar-left{
+            margin: 1.4rem;
+            width: 3.6rem;
+            height: 3.6rem;
+            float: left;
+        }
+        .navbar-fixed-top .navbar-right{
+            margin: 1.4rem;
+            width: 3.6rem;
+            height: 3.6rem;
+            float: right;
+        }
+        .prize{
+            margin: 0 auto;
+            width: 56.25%;
+            position: relative;
+        }
+        .prize img{
+            width: 100%;
+            height: auto;
+        }
+        .prize p{
+            color: #fff;
+            font-size: 4.8rem;
+            position: absolute;
+            bottom: 16%;
+            left: 50%;
+            margin-left: -2em;
+            margin-bottom: -0.5em;
+        }
+        .good{
+            font-size: 3.3rem;
+            color: #ffc865;
+            font-weight: bold;
+            margin: 0.5em 12.5% 2em;
+        }
+        .settlement{
+            color: #fff;
+            font-size: 2.6rem;
+            margin: 0 12% 1em;
+        }
+        .settlement span{
+            margin-right: 2em;
+        }
+        .event{
+            background: #fff;
+            border-bottom: 2px solid #dddddd;
+            padding: 1.2em 12.5% 3.3em;
+        }
+        .event h2{
+            margin: 0 auto 0.8em -4px;
+        }
+        .event h3{
+            color: #d5d5d5;
+            float: right;
+            margin: 8px;
+        }
+        .event p{
+            color: #acacac;
+            font-size: 2rem;
+        }
+        .container-fluid{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(41,189,224,0.48);
+        }
+        .btn{
+            margin: 4% 4%;
+            width: 92%;
+            font-size: 4rem;
+        }
+    </style>
 </head>
 <body>
+<div class="navbar navbar-fixed-top">
+    <img class="navbar-left navbar-text" src="img/home.png" alt="home">
+    <img class="navbar-right navbar-text" src="img/i.png" alt="i">
+    <h1>游戏结果</h1>
+</div>
+<div class="prize">
+    <img src="img/prize.png" alt="prize">
+    <p>卧底胜利</p>
+</div>
+<p class="good">太棒了!你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！</p>
+<div class="settlement">
+    <p>本次游戏共计用时0小时25分钟</p>
+    <p>
+        <span>杀  手0人</span>
+        <span>警  察1人</span>
+        <span>平  民6人</span>
+        <span>狙击手0人</span>
+        <span>医  生1人</span>
+    </p>
+    <p>
+        <span>卧底词汇：爱新觉罗</span><br/>
+        <span>水民词汇：努尔哈赤</span>
+    </p>
+</div>
+<div class="event">
+    <h3>0小时07分</h3>
+    <h2>第1天</h2>
+    <p>晚上：5号被杀手杀死，5号是水民</p>
+    <p>白天：8号被全民投票投死，8号是杀手</p>
+</div>
+<div class="event">
+    <h3>0小时07分</h3>
+    <h2>第2天</h2>
+    <p>晚上：5号被杀手杀死，5号是水民</p>
+    <p>白天：8号被全民投票投死，8号是杀手</p>
+</div>
+<div class="event">
+    <h3>0小时07分</h3>
+    <h2>第3天</h2>
+    <p>晚上：5号被杀手杀死，5号是水民</p>
+    <p>白天：8号被全民投票投死，8号是杀手</p>
+</div>
+<div class="event">
+    <h3>0小时07分</h3>
+    <h2>第4天</h2>
+    <p>晚上：5号被杀手杀死，5号是水民</p>
+    <p>白天：8号被全民投票投死，8号是杀手</p>
+</div>
+<div class="event">
+    <h3>0小时07分</h3>
+    <h2>第5天</h2>
+    <p>晚上：5号被杀手杀死，5号是水民</p>
+    <p>白天：8号被全民投票投死，8号是杀手</p>
+</div>
 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <a class="btn btn-danger" href="css007-index.html">再来一局</a>
+        </div>
+        <div class="col-sm-6">
+            <a class="btn btn-warning">上传并分享</a>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.9.1.js"></script>
+<script src="../js/bootstrap.js"></script>
 </body>
 </html>

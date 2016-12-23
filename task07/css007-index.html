@@ -5,8 +5,50 @@
     <title>桌游精灵-首页</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
+        @media(min-width:360px){
+            html{font-size:30%;}
+        }
+        @media(min-width:640px){
+            html{font-size:50%;}
+        }
+        @media(min-width:768px){
+            html{font-size:62.5%;}
+        }
+        @media(min-width:1024px){
+            html{font-size:100%;}
+        }
+        body{
+            width: 200%;
+        }
         .navbar{
             background: #29bde0;
+            position:fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        .side{
+            width: 40%;
+            height: 100%;
+            padding-bottom: 10000px;
+            border-right: 5px #29bde0 solid;
+            float: left;
+        }
+        .side div{
+            height: 3em;
+            line-height: 3em;
+            font-size: 3rem;
+            color: #29bde0;
+            border-bottom: solid 1px #ddd;
+        }
+        .side div img{
+            -webkit-filter: drop-shadow(40px 0 #29bde0);
+            filter: drop-shadow(40px 0 #29bde0);
+            border-right: 40px solid transparent;
+        }
+        .body{
+            float: left;
+            width: 50%;
         }
         .game,.last-game{
             margin:auto 5.5%;
@@ -33,13 +75,18 @@
             right: 1.2em;
             top: 50%;
         }
-        .game div:not(.title){
+        .game a{
+            display: block;
             background: #69d1e9;
             color: #fff;
             font-size: 3.208rem;
             margin: 3.7% 9.5%;
             height: 4.47em;
             line-height: 4.47em;
+            cursor: pointer;
+        }
+        .game a:hover{
+            text-decoration: none;
         }
         .game p{
             font-size: 2.453rem;
@@ -55,27 +102,36 @@
     </style>
 </head>
 <body>
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-text">
-        <img src="img/3line.png" alt="←">
+<div class="side collapse width">
+    <div><img src="img/speaker.png" alt="公告">   公告<span class="glyphicon glyphicon-chevron-right"></span></div>
+    <div><img src="img/settlings.png" alt="设置">   设置<span class="glyphicon glyphicon-chevron-right"></span></div>
+    <div><img src="img/？.png" alt="帮助">   帮助<span class="glyphicon glyphicon-chevron-right"></span></div>
+    <div><img src="img/i.png" alt="关于">   关于<span class="glyphicon glyphicon-chevron-right"></span></div>
+</div>
+<div class="body">
+    <div class="navbar">
+        <div class="navbar-text" data-toggle="collapse" data-target=".side">
+            <img src="img/3line.png" alt="←">
+        </div>
+    </div>
+    <div class="last-game">
+        <p>上次游戏： 捉鬼猜词版
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </p>
+    </div>
+    <div class="game">
+        <div class="title">捉鬼游戏</div>
+        <a>简化版</a>
+        <p>有2333个用户正在玩此款游戏</p>
+        <a href="css007-vote.html">猜词版
+            <span class="glyphicon glyphicon-play"></span>
+        </a>
+        <p>有666个用户正在玩此款游戏</p>
+        <a>白痴版</a>
+        <p>有7788个用户正在玩此款游戏</p>
     </div>
 </div>
-<div class="last-game">
-    <p>上次游戏： 捉鬼猜词版
-        <span class="glyphicon glyphicon-chevron-right"></span>
-    </p>
-</div>
-<div class="game">
-    <div class="title">捉鬼游戏</div>
-    <div>简化版</div>
-    <p>有2333个用户正在玩此款游戏</p>
-    <div>猜词版
-        <span class="glyphicon glyphicon-play"></span>
-    </div>
-    <p>有666个用户正在玩此款游戏</p>
-    <div>白痴版</div>
-    <p>有7788个用户正在玩此款游戏</p>
-</div>
+
 <script src="../js/jquery-1.9.1.js"></script>
 <script src="../js/bootstrap.js"></script>
 </body>
