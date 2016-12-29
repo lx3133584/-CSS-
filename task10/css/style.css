@@ -1,0 +1,169 @@
+/*头部*/
+    /*导航栏顶部*/
+.header{
+    background: #1d7ad9;
+    text-align: right;
+    height: 3em;
+    line-height: 3em;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.header p:first-child{
+    float: left;
+    margin: 0;
+}
+.header p:last-child a{
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 0.5em;
+}
+    /*导航栏*/
+nav.navbar{
+    background: #f9f9f9;
+}
+ul.navbar-nav{
+    float: right;
+    text-align: center;
+}
+ul.navbar-nav>li>a{
+    font-size: 1.6rem;
+    display: block;
+    margin: 1em 2em;
+    color: #000;
+    background: #fff;
+    box-shadow: #ddd 1px 1px 1px;
+    border-radius: 3px;
+}
+ul.navbar-nav>li>a:hover{
+    color: #fff;
+    background: #1d7ad9;
+}
+ul.navbar-nav li.active a{
+    color: #fff;
+    background: #1d7ad9;
+}
+.navbar-header span{
+    background: #1d7ad9!important;
+}
+@media only screen and (max-width: 767px) {
+    #navList{
+        float: none;
+    }
+    #navList>li a{
+        font-size: 1.6rem;
+        text-align: center;
+        height: 3em;
+        line-height: 3em;
+        padding: 0;
+    }
+    #navList>li:nth-child(2)>a{
+        color: #000;
+        background: #fff;
+    }
+    #navList>li>a:hover{
+        color: #fff;
+        background: #1d7ad9;
+    }
+    .navbar-brand img{
+        height: 100%;
+    }
+}
+/*body*/
+    /*进度条*/
+.my-progress{
+    position: relative;
+    width: 50%;
+    float: right;
+    margin: 40px 0;
+}
+.progress{
+    background: #cccccc;
+    height: 5px;
+}
+.progress-bar-warning{
+    background: #ff7f02;
+}
+.my-progress ol{
+    list-style: none;
+    position: absolute;
+    top: -1em;
+    padding-left: 0;
+    width: 100%;
+}
+.my-progress ol:nth-child(2) li{
+    display: inline-block;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    background: #cccccc;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    margin-left: 18%;
+}
+.my-progress ol:nth-child(2) li:first-child{
+    margin-left: 10%;
+    background: #ff7f02;
+}
+.my-progress ol:nth-child(3){
+    top: 2em;
+}
+.my-progress ol:nth-child(3) li{
+    display: inline-block;
+    color: #ccc;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-left: 10%;
+}
+.my-progress ol:nth-child(3) li:first-child{
+    margin-left: 6%;
+    color: #ff7f02;
+}
+    /*大标题h1*/
+h1{
+   font-size: 2.2rem;
+    margin-top: 120px;
+}
+    /*面板*/
+.panel-heading p{
+    font-size: 1.8rem;
+    color: #1d7ad9;
+    margin: 0 1em;
+    display: inline;
+    vertical-align: middle;
+}
+.panel-body{
+    background: #fbfcff;
+}
+.panel-body>div:last-child{
+    float: right;
+    color: #999;
+    background: #fff;
+    font-size: 1.4rem;
+    border: 1px solid #ddd;
+    height: 3em;
+    line-height: 3em;
+    padding-left: 1.2em;
+    cursor: pointer;
+}
+.panel-body>div:last-child>div{
+    color: #fff;
+    background: #1d7ad9;
+    width: 1.7em;
+    height: 2em;
+    line-height: 2em;
+    display: inline-block;
+    text-align: center;
+    margin-left: 1.6em;
+    margin-right: 0.4em;
+}
+.caret{
+    border-width: 8px;
+}
+label{
+    color: #666;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
