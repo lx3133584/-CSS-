@@ -41,71 +41,76 @@
     </div>
 </nav>
 <div class="body container">
-    <div class="my-progress">
-        <div class="progress">
-            <div class="progress-bar progress-bar-warning" role="progressbar"
-                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                 style="width: 25%;">
+    <div class="row my-progress">
+        <div class="col-lg-6 col-md-5 col-sm-3 col-xs-0"></div>
+        <div class="col-lg-6 col-md-7 col-sm-9 col-xs-12">
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar"
+                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 25%;">
+                </div>
             </div>
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ol>
+            <ol>
+                <li>1.定制纸箱</li>
+                <li>2.选择数量</li>
+                <li>3.上传文件</li>
+                <li>4.确认下单</li>
+            </ol>
         </div>
-        <ol>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-        </ol>
-        <ol>
-            <li>1.定制纸箱</li>
-            <li>2.选择数量</li>
-            <li>3.上传文件</li>
-            <li>4.确认下单</li>
-        </ol>
     </div>
     <h1>请您按照以下步骤来定制您的纸箱</h1>
     <form class="panel panel-default">
         <div class="panel-heading">
             <img src="img/order_box_01.png" alt="box1"><p>选择箱型</p>
         </div>
-        <div class="panel-body">
+        <div class="panel-body row">
             <div class="form-group">
-                <label class="radio-inline"><input type="radio" name="box-type">对口箱</label>
-                <label class="radio-inline"><input type="radio" name="box-type">飞机盒</label>
-                <label class="radio-inline"><input type="radio" name="box-type">天地盖</label>
+                <label class="radio-inline col-lg-1 col-md-2 col-sm-3 col-xs-6"><input type="radio" name="box-type"><b><i></i></b>对口箱</label>
+                <label class="radio-inline col-lg-1 col-md-2 col-sm-3 col-xs-6"><input type="radio" name="box-type"><b><i></i></b>飞机盒</label>
+                <label class="radio-inline col-lg-1 col-md-2 col-sm-3 col-xs-6"><input type="radio" name="box-type"><b><i></i></b>天地盖</label>
             </div>
-            <div><span>查看详情</span><div><b class="caret"></b></div></div>
+            <div class="col-lg-1 col-lg-push-7 col-md-1 col-md-push-4 col-sm-3 col-xs-6"><span>查看详情</span><div><b class="caret"></b></div></div>
         </div>
         <div class="panel-heading">
             <img src="img/order_box_02.png" alt="box2"><p>确定尺寸</p>
         </div>
-        <div class="panel-body">
-            <div class="form-group">
-                <label><input type="radio" name="box-size">外径</label>
-                <label>长<input type="text">mm</label>
-                <label>宽<input type="text">mm</label>
-                <label>高<input type="text">mm</label>
+        <div class="panel-body row">
+            <div class="col-xs-10">
+                <div class="form-group row">
+                    <label class="col-lg-2 col-md-3 col-sm-9 col-xs-12"><input type="radio" name="box-size"><b><i></i></b>外径</label>
+                    <label class="col-lg-2 col-md-3 col-sm-4 col-xs-8 col-xs-push-4 col-sm-push-0 col-md-pull-1 col-lg-push-0">长<input type="text" size="3">mm</label>
+                    <label class="col-lg-2 col-md-3 col-sm-4 col-xs-8 col-xs-push-4 col-sm-push-0 col-md-pull-1 col-lg-push-0">宽<input type="text" size="3">mm</label>
+                    <label class="col-lg-2 col-md-3 col-sm-4 col-xs-8 col-xs-push-4 col-sm-push-0 col-md-pull-1 col-lg-push-0">高<input type="text" size="3">mm</label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-2 col-md-3 col-sm-9 col-xs-12"><input type="radio" name="box-size"><b><i></i></b>内径</label>
+                    <label class="col-lg-2 col-md-3 col-sm-4 col-xs-8 col-xs-push-4 col-sm-push-0 col-md-pull-1 col-lg-push-0">长<input type="text" size="3">mm</label>
+                    <label class="col-lg-2 col-md-3 col-sm-4 col-xs-8 col-xs-push-4 col-sm-push-0 col-md-pull-1 col-lg-push-0">宽<input type="text" size="3">mm</label>
+                    <label class="col-lg-2 col-md-3 col-sm-4 col-xs-8 col-xs-push-4 col-sm-push-0 col-md-pull-1 col-lg-push-0">高<input type="text" size="3">mm</label>
+                </div>
             </div>
-            <div class="form-group">
-                <label><input type="radio" name="box-size">内径</label>
-                <label>长<input type="text">mm</label>
-                <label>宽<input type="text">mm</label>
-                <label>高<input type="text">mm</label>
-            </div>
-            <div><span>查看详情</span><div><b class="caret"></b></div></div>
+            <div class="col-xs-1"><span>查看详情</span><div><b class="caret"></b></div></div>
         </div>
         <div class="panel-heading">
             <img src="img/order_box_03.png" alt="box3"><p>选择材质</p>
         </div>
-        <div class="panel-body">
+        <div class="panel-body row">
             <div class="form-group">
-                <label class="radio-inline"><input type="radio" name="box-marterial">A瓦优质</label>
-                <label class="radio-inline"><input type="radio" name="box-marterial">B瓦优质</label>
-                <label class="radio-inline"><input type="radio" name="box-marterial">E瓦优质</label>
-                <label class="radio-inline"><input type="radio" name="box-marterial">AB瓦优质</label>
-                <label class="radio-inline"><input type="radio" name="box-marterial">BE瓦优质</label>
+                <label class="radio-inline col-lg-2 col-md-4 col-sm-6 col-xs-10  col-xs-push-4 col-sm-push-1 col-md-pull-0 col-lg-push-0"><input type="radio" name="box-marterial"><b><i></i></b>A瓦优质</label>
+                <label class="radio-inline col-lg-2 col-md-4 col-sm-6 col-xs-10  col-xs-push-4 col-sm-push-1 col-md-pull-0 col-lg-push-0"><input type="radio" name="box-marterial"><b><i></i></b>B瓦优质</label>
+                <label class="radio-inline col-lg-2 col-md-4 col-sm-6 col-xs-10  col-xs-push-4 col-sm-push-1 col-md-pull-0 col-lg-push-0"><input type="radio" name="box-marterial"><b><i></i></b>E瓦优质</label>
+                <label class="radio-inline col-lg-2 col-md-4 col-sm-6 col-xs-10  col-xs-push-4 col-sm-push-1 col-md-pull-0 col-lg-push-0"><input type="radio" name="box-marterial"><b><i></i></b>AB瓦优质</label>
+                <label class="radio-inline col-lg-2 col-md-4 col-sm-6 col-xs-10  col-xs-push-4 col-sm-push-1 col-md-pull-0 col-lg-push-0"><input type="radio" name="box-marterial"><b><i></i></b>BE瓦优质</label>
             </div>
-            <div><span>查看详情</span><div><b class="caret"></b></div></div>
+            <div class="radio-inline col-lg-2 col-md-4 col-sm-6 col-xs-10 col-sm-push-1 col-md-pull-0 col-lg-push-0"><span>查看详情</span><div><b class="caret"></b></div></div>
         </div>
-        <button class="btn btn-danger" type="submit">下一步</button>
+        <button class="btn btn-danger btn-lg" type="submit">下一步</button>
     </form>
 </div>
 <div class="footer">
@@ -116,16 +121,16 @@
             </div>
             <div class="col-sm-4">
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-2"><a href="#">关于我们</a></div>
-                    <div class="col-lg-3 col-md-4 col-sm-2"><a href="#">下单说明</a></div>
-                    <div class="col-lg-3 col-md-4 col-sm-2"><a href="#">配送流程</a></div>
-                    <div class="col-lg-3 col-md-4 col-sm-2"><a href="#">联系我们</a></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6"><a href="#">关于我们</a></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6"><a href="#">下单说明</a></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6"><a href="#">配送流程</a></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6"><a href="#">联系我们</a></div>
                 </div>
             </div>
             <div class="col-sm-4">
+                <img src="img/QR_code.png" alt="QR_code">
                 <p>TEL：400-810-9151</p>
                 <p>微信号：bz9151</p>
-                <img src="img/QR_code.png" alt="QR_code">
             </div>
         </div>
     </div>

@@ -72,8 +72,6 @@ ul.navbar-nav li.active a{
     /*进度条*/
 .my-progress{
     position: relative;
-    width: 50%;
-    float: right;
     margin: 40px 0;
 }
 .progress{
@@ -89,6 +87,7 @@ ul.navbar-nav li.active a{
     top: -1em;
     padding-left: 0;
     width: 100%;
+    white-space:nowrap
 }
 .my-progress ol:nth-child(2) li{
     display: inline-block;
@@ -122,8 +121,8 @@ ul.navbar-nav li.active a{
 }
     /*大标题h1*/
 h1{
-   font-size: 2.2rem;
-    margin-top: 120px;
+    font-size: 2.2rem;
+    margin-top: 80px;
 }
     /*面板*/
 .panel-heading p{
@@ -135,9 +134,9 @@ h1{
 }
 .panel-body{
     background: #fbfcff;
+    margin: 0;
 }
 .panel-body>div:last-child{
-    float: right;
     color: #999;
     background: #fff;
     font-size: 1.4rem;
@@ -145,7 +144,10 @@ h1{
     height: 3em;
     line-height: 3em;
     padding-left: 1.2em;
+    padding-right: 0;
     cursor: pointer;
+    margin: 2em 0!important;
+    width: 9.1em;
 }
 .panel-body>div:last-child>div{
     color: #fff;
@@ -165,5 +167,82 @@ label{
     color: #666;
     font-size: 1.8rem;
     font-weight: normal;
+    margin: 2em 0!important;
+    position: relative;
+    cursor: pointer;
+}
+label b{
+    background: #fff;
+    border: 1px #999999 solid;
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    z-index: 100;
+    position: absolute;
+    left: -0.4em;
+    top: 0.1em;
+}
+label b i{
+    background: #fff;
+    border-radius: 50%;
+    height: 0.2em;
+    width: 0.2em;
+    display: inline-block;
+    z-index: 101;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+label input:checked+b{
+    background: #1d7ad9;
+    border: 1px #2f8fff solid;
+}
+input[type="text"]{
+    height: 1.3em;
+}
+input[type="radio"]{
+    position: absolute; left: -9999px;
+}
+.form-group{
+    margin: 0;
+}
+    /*按钮*/
+.btn-lg{
+    width: 9em;
+    margin:6em auto;
+    display: block;
+}
+/*footer部分*/
+.footer h2{
+    font-size: 1.8rem;
+    color: #999;
+    font-weight: bold;
+}
+.col-sm-4:nth-child(2) a{
+    color: #999;
+    margin: 1em 0;
+    font-size: 1.4rem;
+    display: block;
+}
+.col-sm-4:nth-child(3) p{
+    font-size: 1.4rem;
+    color: #999;
+    padding: 0.5em;
+    margin: 0;
+    text-align: right;
+}
+.col-sm-4:nth-child(3) img{
+    height: 6em;
+    float: right;
+}
+@media screen and (max-width: 768px){
+    .col-sm-4:nth-child(3) p{
+        text-align: left;
+    }
+    .col-sm-4:nth-child(3) img{
+        float: left;
+    }
 }
 
