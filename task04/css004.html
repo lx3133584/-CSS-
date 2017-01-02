@@ -4,82 +4,133 @@
     <meta charset="UTF-8">
     <title>登录页</title>
     <style>
-        *{
+        /*重置*/
+        * {
             margin: 0;
-            padding: 0;
-            font-family: "宋体",serif;
-            font-size: 32px;
+            font-family: "宋体", serif;
         }
-        .header{
-            background: #5FC0CD;
+        html {
+            font-size: 10px;
+        }
+        /*标题栏start*/
+        .header {
+            background: #21b8e5;
+            color: #fff;
+            font-size: 3.2rem;
             text-align: center;
+            height: 2.75em;
+            line-height: 2.75em;
+            padding: 0 1em;
         }
-        .close{
-            color: #FFF;
-            line-height: 88px;
+        .header p.close {
             float: left;
-            padding-left: 30px;
         }
-        .register{
-            color: #FFF;
-            line-height: 88px;
-            float: right;
-            padding-right: 30px;
-        }
-        .header h1{
-            color: #FFF;
-            font-size: 36px;
-            line-height: 88px;
+        .header h1 {
             display: inline;
             font-weight: normal;
+            font-size: 3.6rem;
+            vertical-align: middle;
         }
-        body{
+        .header p.register {
+            float: right;
+        }
+        /*标题栏end*/
+        /*内容部分start*/
+        body {
             background: #eff0f4;
         }
-        .bodyer div{
+        /*账号start*/
+        #account {
             background: #fff;
-            height: 100px;
-            width: 100%;
-            margin-top: 2vh;
+            font-size: 3.6rem;
+            height: 2.78em;
+            line-height: 2.78em;
+            margin-top: 0.5em;
+            white-space: nowrap;
+            position: relative;
         }
-        .bodyer div img{
-            height: 43px;
-            width: 29px;
-            margin: 29px 40px;
-            float: left;
+        #account img {
+            height: 1.19em;
+            vertical-align: middle;
+            margin: 0 1em;
         }
-        .input{
-            height: 43px;
-            padding: 10px 10px 10px 36px;
-            margin:18px 0;
-            border: 0;
+        #account input:nth-child(2) {
+            font-size: 3.6rem;
+            border: none;
             border-left: solid 2px #eaedee;
-            outline: 0;
+            outline: none;
+            padding-left: 1em;
         }
-        .bodyer form>input{
-            background: #5FC0CD;
-            color: #fff;
-            height: 100px;
-            line-height: 100px;
-            width: 100%;
-            margin-top: 6vh;
-            font-size: 36px;
-            border: 0;
-        }
-        .bodyer>p{
-            float: right;
-            margin: 18px 30px;
-            color: #5fc0cd;
-        }
-        .reset{
+        #account .reset {
             background: url(img/x.png) no-repeat;
-            width: 40px;
-            height: 40px;
-            border: 0;
-            float: right;
-            margin: 30px;
-            display: none;
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            left: 90%;
+            top: 30%;
+            border: none;
         }
+        /*账号end*/
+        /*密码start*/
+        #password {
+            background: #fff;
+            font-size: 3.6rem;
+            height: 2.78em;
+            line-height: 2.78em;
+            margin-top: 0.5em;
+            white-space: nowrap;
+            position: relative;
+        }
+        #password img {
+            height: 1.19em;
+            vertical-align: middle;
+            margin: 0 1em;
+        }
+        #password input:nth-child(2) {
+            font-size: 3.6rem;
+            border: none;
+            border-left: solid 2px #eaedee;
+            outline: none;
+            padding-left: 1em;
+        }
+        #password .reset {
+            background: url(img/x.png) no-repeat;
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            left: 90%;
+            top: 30%;
+            border: none;
+        }
+        /*密码end*/
+        /*登录按钮start*/
+        input[type="submit"] {
+            margin-top: 2em;
+            font-size: 3.6rem;
+            background: #21b8e5;
+            color: #fff;
+            height: 2.78em;
+            line-height: 2.78em;
+            width: 100%;
+            border: none;
+        }
+        /*登录按钮end*/
+        /*忘记密码start*/
+        .body > p {
+            font-size: 3.2rem;
+            color: #21b8e5;
+            margin: 1em;
+            float: right;
+        }
+        /*忘记密码end*/
+        /*内容部分end*/
+        /*提示部分start*/
+        /*loading start*/
+        /*loading end*/
+        /*warning start*/
+        /*warning end*/
+        /*提示部分end*/
+
     </style>
 </head>
 <body>
@@ -88,7 +139,7 @@
     <h1>登录</h1>
     <p class="register">注册</p>
 </div>
-<div class="bodyer">
+<div class="body">
     <form>
         <div id="account">
             <img src="img/iphone.png" alt="手机">
