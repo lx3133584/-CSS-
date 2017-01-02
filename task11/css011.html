@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <p class="close">关闭</p>
+    <h1>登录</h1>
+    <p class="register">注册</p>
+</div>
+<div class="body">
+    <form>
+        <div id="account">
+            <img src="img/iphone.png" alt="手机">
+            <input type="text" class="input" placeholder="请输入手机号" pattern="[0-9]{11}">
+            <input type="button" class="reset" value="">
+        </div>
+        <div id="password">
+            <img src="img/locked.png" alt="密码">
+            <input type="password" class="input" placeholder="请输入密码" pattern="^[a-zA-Z]\w{5,17}$">
+            <input type="button" class="reset" value="">
+        </div>
+        <input type="submit" value="登 录">
+    </form>
+    <p>忘记密码？</p>
+</div>
+<div class="loading"></div>
+<div class="warning"></div>
+<script>
+    function oReset(obj){
+        var inp = obj.getElementsByTagName("input")[0];
+        var rst = obj.getElementsByTagName("input")[1];
+        rst.onclick = function () {
+            inp.value = "";
+        }
+        if(inp.value){
+            rst.style.display = "block";
+        }
+        else{
+            rst.style.display = "none";
+        }
+    }
+    window.onload = function () {
+        var acc = document.getElementById("account");
+        var pass = document.getElementById("password");
+        setInterval(function () {
+            oReset(acc);
+            oReset(pass);
+        },30)
+    }
+</script>
+</body>
+</html>

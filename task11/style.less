@@ -1,0 +1,103 @@
+//定义颜色
+@color:#21b8e5;
+/*重置*/
+*{
+  margin:0;
+  font-family: "宋体",serif;
+}
+html{
+  font-size: 10px;
+}
+/*标题栏start*/
+.header{
+  background: @color;
+  color: #fff;
+  font-size: 3.2rem;
+  text-align: center;
+  height: 2.75em;
+  line-height: 2.75em;
+  padding: 0 1em;
+  p.close{
+    float: left;
+  }
+  h1{
+    display: inline;
+    font-weight: normal;
+    font-size: 3.6rem;
+    vertical-align: middle;
+  }
+  p.register{
+    float: right;
+  }
+}
+/*标题栏end*/
+
+/*内容部分start*/
+body{
+  background: #eff0f4;
+}
+/*账号start*/
+#account{
+  background: #fff;
+  font-size: 3.6rem;
+  height: 2.78em;
+  line-height: 2.78em;
+  margin-top: 0.5em;
+  white-space: nowrap;
+  position: relative;
+  img{
+    height: 1.19em;
+    vertical-align: middle;
+    margin: 0 1em;
+  }
+  input:nth-child(2){
+    font-size: 3.6rem;
+    border: none;
+    border-left: solid 2px #eaedee;
+    outline: none;
+    padding-left: 1em;
+  }
+  .reset{
+    background: url(img/x.png) no-repeat;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    border: none;
+  }
+}
+/*账号end*/
+/*密码start*/
+#password{
+  #account
+}
+/*密码end*/
+/*登录按钮start*/
+input[type="submit"]{
+  margin-top: 2em;
+  font-size: 3.6rem;
+  background: @color;
+  color: #fff;
+  height: 2.78em;
+  line-height: 2.78em;
+  width: 100%;
+  border: none;
+}
+/*登录按钮end*/
+/*忘记密码start*/
+.body>p{
+  font-size: 3.2rem;
+  color: @color;
+  margin: 1em;
+  float: right;
+}
+/*忘记密码end*/
+/*内容部分end*/
+
+/*提示部分start*/
+/*loading start*/
+/*loading end*/
+/*warning start*/
+/*warning end*/
+/*提示部分end*/
