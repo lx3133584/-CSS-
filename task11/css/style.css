@@ -56,7 +56,7 @@ body {
   padding-left: 1em;
 }
 #account .reset {
-  background: url(img/x.png) no-repeat;
+  background: url(../img/x.png) no-repeat;
   width: 4rem;
   height: 4rem;
   position: absolute;
@@ -88,7 +88,7 @@ body {
   padding-left: 1em;
 }
 #password .reset {
-  background: url(img/x.png) no-repeat;
+  background: url(../img/x.png) no-repeat;
   width: 4rem;
   height: 4rem;
   position: absolute;
