@@ -139,7 +139,8 @@ body{
     text-align: center;
     background: #29bde0;
 }
-.footer button{
+.footer a{
+    display: inline-block;
     width: 80%;
     height: 3em;
     line-height: 3em;
@@ -147,6 +148,7 @@ body{
     color: #fff;
     background: #fbb435;
     border: 0;
+    text-decoration: none;
 }
 /*end footer*/
 
