@@ -115,6 +115,9 @@ body{
     text-align: center;
     white-space: nowrap;
 }
+.operate:not(.active){
+    visibility: hidden;
+}
 .operate img{
     margin-right: 16%;
     padding: 5px;
